@@ -1,1 +1,1 @@
-# React_safemoon
+# safemoon
