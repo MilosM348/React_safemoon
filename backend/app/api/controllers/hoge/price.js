@@ -29,6 +29,9 @@ module.exports = {
     startTime.setHours(0);
     startTime.setMinutes(0);
     const current = new Date();
+    priceModel.find({ 
+      $and: [ { Timestamp: { $gte : startTime } }, { Timestamp: { $lte : current } }] 
+    })
     .sort({Timestamp: 1})
     .exec()
     .then((result) => {
