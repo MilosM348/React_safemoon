@@ -10,10 +10,6 @@ const WalletSchema = new Schema({
     type: String,
     unique: true,
   },
-  Timestamp: {
-    type: Date,
-    default: Date.now,
-  },
 });
 WalletSchema.plugin(unique, { message: 'That {PATH} is already taken.' });
 WalletSchema.plugin(autoIncrement.plugin, 'Wallet');

@@ -21,6 +21,15 @@ const PriceSchema = new Schema({
   ath: {
     type: Number,
   },
+  ath_percentage: {
+    type: Number,
+  },
+  ath_date: {
+    type: Date,
+  },
+  atl: {
+    type: Number,
+  },
   atl_percentage: {
     type: Number,
   },
