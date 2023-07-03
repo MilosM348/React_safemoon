@@ -12,6 +12,10 @@ const MarketSchema = new Schema({
   price: {
     type: Number,
   },
+  Timestamp: {
+    type: Date,
+    default: Date.now,
+  },
 });
 MarketSchema.plugin(autoIncrement.plugin, 'Market');
 module.exports = mongoose.model('Market', MarketSchema)
