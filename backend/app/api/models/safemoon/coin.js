@@ -12,10 +12,6 @@ const CoinSchema = new Schema({
   amount: {
     type: Number,
   },
-  Timestamp: {
-    type: Date,
-    default: Date.now,
-  },
 });
 CoinSchema.plugin(autoIncrement.plugin, 'Coin');
 module.exports = mongoose.model('Coin', CoinSchema)
