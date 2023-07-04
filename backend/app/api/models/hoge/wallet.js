@@ -10,10 +10,6 @@ const HogeWalletSchema = new Schema({
     type: String,
     unique: true,
   },
-  Timestamp: {
-    type: Date,
-    default: Date.now,
-  },
 });
 HogeWalletSchema.plugin(unique, { message: 'That {PATH} is already taken.' });
 HogeWalletSchema.plugin(autoIncrement.plugin, 'HogeWallet');
