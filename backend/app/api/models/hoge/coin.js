@@ -12,6 +12,10 @@ const HogeCoinSchema = new Schema({
   amount: {
     type: Number,
   },
+  Timestamp: {
+    type: Date,
+    default: Date.now,
+  },
 });
 HogeCoinSchema.plugin(autoIncrement.plugin, 'HogeCoin');
 module.exports = mongoose.model('HogeCoin', HogeCoinSchema)

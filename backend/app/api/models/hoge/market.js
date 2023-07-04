@@ -12,10 +12,6 @@ const HogeMarketSchema = new Schema({
   price: {
     type: Number,
   },
-  Timestamp: {
-    type: Date,
-    default: Date.now,
-  },
 });
 HogeMarketSchema.plugin(autoIncrement.plugin, 'HogeMarket');
 module.exports = mongoose.model('HogeMarket', HogeMarketSchema)
