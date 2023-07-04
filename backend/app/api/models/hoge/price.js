@@ -24,12 +24,6 @@ const HogePriceSchema = new Schema({
   ath_percentage: {
     type: Number,
   },
-  ath_date: {
-    type: Date,
-  },
-  atl: {
-    type: Number,
-  },
   atl_percentage: {
     type: Number,
   },
