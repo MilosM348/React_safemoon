@@ -18,6 +18,15 @@ const AssPriceSchema = new Schema({
   volume: {
     type: Number,
   },
+  ath: {
+    type: Number,
+  },
+  ath_percentage: {
+    type: Number,
+  },
+  ath_date: {
+    type: Date,
+  },
   atl: {
     type: Number,
   },

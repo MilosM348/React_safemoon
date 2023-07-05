@@ -10,10 +10,6 @@ const AssWalletSchema = new Schema({
     type: String,
     unique: true,
   },
-  Timestamp: {
-    type: Date,
-    default: Date.now,
-  },
 });
 AssWalletSchema.plugin(unique, { message: 'That {PATH} is already taken.' });
 AssWalletSchema.plugin(autoIncrement.plugin, 'AssWallet');
