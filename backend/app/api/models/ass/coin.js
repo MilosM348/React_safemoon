@@ -9,6 +9,9 @@ const AssCoinSchema = new Schema({
   walletId: {
     type: String,
   },
+  amount: {
+    type: Number,
+  },
   Timestamp: {
     type: Date,
     default: Date.now,
